@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaoldal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h4>Új pizza felvitele</h4>
+    <label>Név:</label>
+    <input type="text" id="name">
+    <br/>
+    <label>Glutén mentes:</label>
+    <input type="number" id="isGlutenFree" min="0" max="1" value="0" hidden>
+    <button id="yesgluten">Igen</button>
+    <button id="nogluten" style="background-color: red;">Nem</button>
+    <br/>
+    <label>Kép link:</label>
+    <input type="text" id="kepURL">
+    <br/>
+    <button id="buttonsend">Hozzáadás</button>
+    <br/>
+    <h1>Pizzák</h1>
+    <div id="container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
